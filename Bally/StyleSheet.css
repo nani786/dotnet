@@ -1,0 +1,85 @@
+﻿.textBox
+{
+	font-family: Verdana;
+	font-size: small;
+	width: 150px;
+}
+.textBoxDate
+{
+	font-family: Verdana;
+	font-size: small;
+	width: 110px;
+}
+.button
+{
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+}
+.label
+{
+	font-family: Verdana;
+	font-size: small;
+	color: Navy;
+	font-weight: bold;
+}
+.labelDate
+{
+	font-family: Verdana;
+	font-size: x-small;
+	color: Navy;
+}
+.data
+{
+	font-family: Verdana;
+	font-size: small;
+}
+.labelError
+{
+	font-family: Verdana;
+	font-size: small;
+	color: Red;
+}
+.dropdownRelation
+{
+	font-family: Verdana;
+	font-size: small;
+	width: 130px;
+}
+.dropdown
+{
+	font-family: Verdana;
+	font-size: small;
+	width: 155px;
+}
+.linkButton
+{
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+	color: Navy;
+}
+.MasterLinkButton
+{
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+	color: White;
+}
+.MessageText
+{
+    font-family: Verdana;
+    font-size: small;
+    color: Maroon;
+    font-weight: 600;
+    float:left;
+    text-align:left;
+    
+}
+.table
+{
+	border-color: #003399;
+	height: 250px;
+	width: 800px;
+	font-family: Verdana;
+}

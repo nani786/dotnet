@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        window.history.forward(1);
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" type="text/css" rel="Stylesheet" />
+    <style type="text/css">
+        .style1
+        {
+            height: 65px;
+            width: 616px;
+        }
+    </style>
+</head>
+<body style="margin-top: 0; margin-left: 0; margin-right: 0">
+    <form id="form1" runat="server" style="background-image: url(images/bg.jpg);">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="true">
+        </asp:ScriptManager>
+        <center>
+            <table bgcolor="white" style="width: 990px; height: 550px" border="0" cellpadding="0"
+                cellspacing="0">
+                <tr>
+                    <td align="center" style="height: 50px;">
+                        <table cellpadding="0" cellspacing="0" style="width: 990px; height: 65px;">
+                            <tr>
+                                <td align="left" bgcolor="#3366FF">
+                                    <img src="Images/logo.png" alt="" />
+                                </td>
+                                <td align="left" bgcolor="#3366FF" class="style1">
+                                    <asp:Label ID="lblHeading" runat="server" Text="Label" Font-Bold="True" Font-Names="Arial"
+                                        Font-Size="Large" ForeColor="White" Width="242px" Font-Italic="False" 
+                                        Height="29px"></asp:Label>
+                                </td>
+                                 <td align="right" style="height: 65px">
+                                    <img src="Images/TBSL%20Logo.JPG" style="height: 78px; width: 217px" />
+                                </td>
+                                <td align="right" style="height: 65px">
+                                    <img src="Images/Marsh%20Logo.JPG" style="height: 100px; width: 267px" />
+                                </td>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="height: 20px; background-color: #124d77;">
+                        <table cellpadding="0" cellspacing="0" style="width: 981px">
+                            <tr>
+                                <td align="left">
+                                    <asp:Label ID="lblWelcomeNote" runat="server" Font-Names="Verdana" Font-Size="Small"
+                                        ForeColor="White"></asp:Label>
+                                </td>
+                                <td align="right">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:LinkButton ID="lnkChgPwd" runat="server" CssClass="MasterLinkButton" Font-Underline="False"
+                                        Visible="false" CausesValidation="False" ForeColor="White" 
+                                        onclick="lnkChgPwd_Click">ChangePassword</asp:LinkButton>
+                                </td>
+                                <td align="right">
+                                    <asp:LinkButton ID="lbLogout" runat="server" CssClass="MasterLinkButton" Font-Underline="False"
+                                        OnClick="lbLogout_Click" Visible="false" CausesValidation="False" ForeColor="White">Logout</asp:LinkButton>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+               <%-- <tr>
+                    <td style="height: 25px; background-color: #3366FF;" class="data">
+                        <marquee id="scroll_news" style="color: White; font-family: Book Antiqua; font-weight: bold"
+                            behavior="alternate" scrollamount="4" onmouseover="document.getElementById('scroll_news').stop();"
+                            onmouseout="document.getElementById('scroll_news').start();">An ISO 9001:2008 Certified TPA</marquee>
+                    </td>
+                </tr>--%>
+                  <tr>
+                    <td style="height: 19px; background-color: #3366FF;" class="data">
+                        <marquee id="scroll_news" style="color: #0000ff; font-family: Book Antiqua; font-weight: bold"
+                            behavior="alternate" scrollamount="4" onmouseover="document.getElementById('scroll_news').stop();"
+                            onmouseout="document.getElementById('scroll_news').start();">ISO 9001:2008 Certified TPA</marquee>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    </form>
+</body>
+</html>
